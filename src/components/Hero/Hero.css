@@ -1,0 +1,49 @@
+.introduction{
+    display: flex;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-image: url("../../../public/icons/bg-curvy-mobile.svg");
+    background-size: cover;
+}
+
+.header-intro-image{
+    width: 90%;
+    max-width: 400px;
+}
+
+.introduction h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: x-large;
+    line-height: 35px;
+    margin-top: 45px;
+}
+
+.introduction p{
+    margin-top: 20px;
+    line-height: 24px;
+    letter-spacing: 0.7px;
+}
+
+.introduction button {
+    background-color:  hsl(198, 60%, 50%);
+    border: none;
+    border-radius: 40px;
+    width: 250px;
+    height: 50px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-family: 'Raleway', sans-serif;
+    font-size: medium;
+    margin-top: 25px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: hsl(176, 68%, 64%);
+}

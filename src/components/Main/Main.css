@@ -1,0 +1,195 @@
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.features-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.features-container p:first-of-type {
+  font-family: "Raleway", sans-serif;
+  margin-top: 40px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  font-size: large;
+}
+
+.features-container p:last-child {
+  font-size: small;
+  margin-top: 20px;
+  line-height: 1.4rem;
+}
+
+.information {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-items: center; */
+  text-align: left;
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 9.5rem;
+}
+
+.information h2 {
+  font-family: "Raleway", sans-serif;
+  font-size: large;
+  letter-spacing: 0.2px;
+  margin-top: 40px;
+}
+
+.information p {
+  margin-top: 20px;
+}
+
+.information p:last-of-type a {
+  color: hsl(176, 68%, 64%);
+}
+
+.info-img {
+  width: 300px;
+}
+
+.quote-img {
+  width: 25px;
+  margin-left: 7px;
+}
+
+.testimonials-wrapper {
+  margin-top: 10rem;
+}
+
+.testimonials {
+  background-color: hsl(219, 30%, 18%);
+  padding: 20px;
+  margin-bottom: 2rem;
+  border-radius: 5px;
+  text-align: left;
+  min-width: 330px;
+  height: 22vh;
+}
+
+.testimonials p {
+  font-size: small;
+}
+
+.testimonial-list-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.icon-profile-styles {
+  border-radius: 50%;
+  width: 40px;
+  margin-right: 10px;
+}
+
+.list-style {
+  list-style: none;
+  padding: 0;
+  margin-left: 2px;
+}
+
+.list-container ul li:nth-of-type(2) {
+  font-size: x-small;
+  line-height: 2rem;
+}
+
+@media (min-width: 1200px) {
+  .mainContainer {
+    min-width: 60%;
+    padding: 20px;
+  }
+
+  .features-wrapper {
+    display: grid;
+    grid-template-areas:
+      "feature1   feature2"
+      "feature3   feature4";
+    grid-template-columns: repeat(2fr);
+    grid-template-rows: repeat(2fr);
+    grid-column-gap: 7rem;
+  }
+
+  .feature1 {
+    grid-area: feature1;
+  }
+
+  .feature2 {
+    grid-area: feature2;
+  }
+
+  .feature3 {
+    grid-area: feature3;
+  }
+
+  .feature4 {
+    grid-area: feature4;
+  }
+
+  .information {
+    flex-direction: row;
+    align-items: center;
+    width: 85vw;
+    display: grid;
+    grid-template-areas: "imagen info";
+    grid-template-columns: repeat(2fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 4rem;
+  }
+
+  .icon-info {
+    grid-area: imagen;
+  }
+
+  .info-img {
+    width: 500px;
+  }
+
+  .info-box {
+    grid-area: info;
+  }
+
+  .information h2 {
+    font-size: xx-large;
+    line-height: 2.5rem;
+    white-space: normal;
+  }
+
+  .testimonials-container{
+    display: grid;
+    grid-template-areas: "profile1 profile2 profile3";
+    grid-template-columns: repeat(3fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 2rem;
+  }
+
+  .first-profile {
+    grid-area: profile1;
+  }
+
+  .second-profile {
+    grid-area: profile2;
+  }
+
+  .third-profile {
+    grid-area: profile3;
+  }
+
+  .testimonials{
+    height: 28vh;
+  }
+}
