@@ -116,7 +116,7 @@ body {
 @media (min-width:640px) and (max-width:900px){
   #root{
     width: 100%;
-    background-image: url("../../../public/icons/bg-curvy-desktop.svg");
+    background-image: url("/icons/bg-curvy-desktop.svg");
     background-position: 50% 7%;
     background-repeat: no-repeat;
     background-size: contain;
@@ -133,7 +133,7 @@ body {
 @media (min-width:900px){
   #root{
     width: 100%;
-    background-image: url("../../../public/icons/bg-curvy-desktop.svg");
+    background-image: url("/icons/bg-curvy-desktop.svg");
     background-position: 50% 7%;
     background-repeat: no-repeat;
     background-size: contain;
@@ -150,7 +150,7 @@ body {
 @media (min-width: 1200px) {
   #root {
     width: 100%;
-    background-image: url("../../../public/icons/bg-curvy-desktop.svg");
+    background-image: url("/icons/bg-curvy-desktop.svg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: 50% 16.8%;
@@ -194,7 +194,7 @@ body {
   .form-login-container label {
     padding-left: 1rem;
   }
-  
+
   .form-login-container button {
     align-self: center;
     margin-top: 1rem;

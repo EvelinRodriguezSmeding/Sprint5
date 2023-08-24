@@ -73,7 +73,6 @@ function Login() {
               La contraseña debe tener 8 caracteres mínimo
             </p>
           )}
-          <p>Create account</p>
           <button type="submit">Sign in</button>
         </form>
       </div>
