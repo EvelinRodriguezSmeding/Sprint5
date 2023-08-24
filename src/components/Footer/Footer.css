@@ -1,83 +1,302 @@
-.footer-wrapper{
-    position: relative;
-    background-color: hsl(216, 53%, 9%) ;
-    padding: 30px;
-    margin-top: 20rem;
-    z-index: 1;
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+
+.footer-wrapper {
+  position: relative;
+  background-color: hsl(216, 53%, 9%);
+  padding: 30px;
+  margin-top: 20rem;
+  z-index: 1;
 }
 
-.footer-container{
-    margin: 70% auto;
+.footer-container {
+  margin: 70% auto;
 }
 
-.logo-footer{
-    width: 170px;
-    margin-bottom: 40px;
-    margin-left: 10px;
+.logo-footer {
+  width: 170px;
+  margin-bottom: 40px;
+  margin-left: 10px;
 }
 
-.contact-wrapper{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 45px;
+.contact-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 45px;
 }
 
-.contact-item{
-    display: flex;
-    align-items:first baseline;
-    margin-bottom: 15px;
+.contact-item {
+  display: flex;
+  align-items: first baseline;
+  margin-bottom: 15px;
 }
 
-.contact-item img{
-    margin-right: 25px;
+.contact-item img {
+  margin-right: 25px;
 }
 
 .contact-wrapper .contact-item:first-of-type p {
-    line-height: 25px;
+  line-height: 25px;
 }
 
-.nav-list-footer{
-    list-style: none;
-    padding: 0;
-    line-height: 2.5rem;
+.nav-list-footer {
+  list-style: none;
+  padding: 0;
+  line-height: 2.5rem;
 }
 
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 
-.nav-second-list-footer{
-    list-style: none;
-    padding: 0;
-    margin-top: 2.5rem;
-    line-height: 2.5rem;
-
+.nav-second-list-footer {
+  list-style: none;
+  padding: 0;
+  margin-top: 2.5rem;
+  line-height: 2.5rem;
 }
 
 .nav-list-footer li a,
 .nav-second-list-footer li a {
-    color: hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 100%);
 }
-.social-icons{
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.icon {
+  border: 2px solid white;
+  border-radius: 50%;
+  padding: 8px;
+  width: 40px;
+  height: 40px;
+  margin: 10px;
+}
+
+.facebook-icon {
+  filter: brightness(0) invert(1);
+}
+
+.twitter-icon,
+.instagram-icon {
+  filter: brightness(0) invert(1);
+}
+
+.form-email-container {
+  font-family: "Raleway", sans-serif;
+  position: absolute;
+  top: -10rem;
+  left: 50%;
+  z-index: 5;
+  transform: translateX(-50%);
+  background-color: hsl(217, 28%, 15%);
+  border-radius: 12px;
+  min-width: 300px;
+  height: 44vh;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.form-email-container p:first-of-type {
+  font-size: large;
+  font-weight: 700;
+  margin-top: 15px;
+}
+
+.form-email-container p:nth-child(2) {
+  line-height: 1.5rem;
+  font-family: "Open Sans", sans-serif;
+  margin-top: 20px;
+}
+
+input {
+  border: none;
+  border-radius: 40px;
+  padding: 21px;
+  width: 290px;
+  height: 55px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-top: 20px;
+}
+
+input ::placeholder {
+  color: hsl(217, 28%, 60%);
+}
+
+button {
+  background-color: hsl(198, 60%, 50%);
+  color: hsl(0, 0%, 100%);
+  border: none;
+  border-radius: 40px;
+  width: 290px;
+  height: 60px;
+  font-weight: 700;
+  font-size: medium;
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 1px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: hsl(176, 68%, 64%);
+}
+
+.error {
+  border-color: red;
+}
+
+.errorMessage{
+  font-size: small;
+}
+
+@media (max-width:375px){
+  .form-email-container {
+    top: -12rem;
+    left: 50%;
+    height: 55vh;
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer-wrapper {
+    position: relative;
+    padding: 5rem;
+    height: 85vh;
+  }
+  .form-email-container {
+    top: -11rem;
+    min-width: 765px;
+  }
+
+  .form-email-container p {
+    padding: 0 20px;
+    text-align: center;
+    font-size: small;
+    padding: 0px 65px;
+  }
+
+  .form-email-container p:first-of-type {
+    padding: 0 7px;
+    text-align: center;
+    font-size: x-large;
+  }
+
+  .form-email-container form {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 5rem;
-}
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 0 30px;
+    margin-top: 0.5rem;
+  }
 
-.icon{
-    border: 2px solid white;
-    border-radius: 50%;
-    padding: 8px;
-    width: 40px;
+  input {
+    width: 450px;
     height: 40px;
-    margin: 10px;
+    margin-right: 1.5rem;
+  }
+
+  .form-email-container button {
+    position: fixed;
+    left: 33rem;
+    width: 170px;
+    height: 40px;
+    font-size: small;
+  }
+
+  .logo-footer {
+    position: absolute;
+    top: 7rem;
+  }
+
+  .footer-box {
+    margin-top: -610px;
+    display: flex;
+    justify-items: center;
+    align-items: flex-start;
+    display: grid;
+    grid-template-areas:
+      "contact contact nav nav socials"
+      "contact contact nav nav socials";
+    grid-template-columns: 6fr 1fr 0.5fr 0.5fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 5rem;
+  }
+
+  .contact-wrapper {
+    display: grid;
+    grid-area: contact;
+    grid-template-areas:
+      "location phone"
+      "location email";
+    grid-template-rows: auto 1fr;
+    grid-row-gap: 0.5rem;
+    grid-column-gap: 5rem;
+    margin-bottom: 0;
+  }
+
+  .location {
+    grid-area: location;
+  }
+
+  .phone {
+    grid-area: phone;
+  }
+
+  .email {
+    grid-area: email;
+  }
+
+  .navlist-container {
+    display: grid;
+    grid-area: nav;
+    grid-template-areas:
+      "list1 list2"
+      "list1 list2";
+    grid-column-gap: 5rem;
+    margin-top: -0.5rem;
+  }
+
+  .nav-list-footer {
+    grid-area: list1;
+  }
+
+  .nav-second-list-footer {
+    grid-area: list2;
+    margin: 0;
+  }
+
+  .social-icons {
+    grid-area: socials;
+    margin-top: -0.7rem;
+  }
+
+  .icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  .errorMessage{
+    font-size: small;
+  }
 }
 
-.facebook-icon{
-    filter: brightness(0) invert(1);
-}
-
-.twitter-icon, .instagram-icon{
-    filter: brightness(0) invert(1);
+@media (min-width: 1300px) {
+  .footer-wrapper {
+    height: 75vh;
+  }
+  .logo-footer {
+    position: absolute;
+    top: 12rem;
+  }
+  .footer-box {
+    grid-template-columns: 3.5fr 2fr 1fr 1fr 2fr;
+    margin-top: -640px;
+  }
 }

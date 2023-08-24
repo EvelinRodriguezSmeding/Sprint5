@@ -8,13 +8,9 @@ function Info({ icon, title, location, shareFiles, seeHowLink, icon2 }) {
         <h2>{title}</h2>
         <p>{location}</p>
         <p>{shareFiles}</p>
-        <p>
-          {" "}
-          <a href="#">
-            {seeHowLink} {icon2}{" "}
-          </a>
-        </p>
+        <a>{seeHowLink} {icon2}</a>
       </div>
+      <hr />
     </div>
   );
 }

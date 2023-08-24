@@ -34,8 +34,6 @@
 .information {
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
-  /* align-items: center; */
   text-align: left;
   width: 300px;
   margin: 0 auto;
@@ -49,21 +47,44 @@
   margin-top: 40px;
 }
 
-.information p {
+.information p, a {
   margin-top: 20px;
 }
 
-.information p:last-of-type a {
+.info-box a {
+  display: flex;
+  align-content: center;
+  gap: 0.5rem;
   color: hsl(176, 68%, 64%);
+  cursor: pointer;
+}
+
+.info-box a:hover{
+  color: hsl(0, 0%, 100%);
+}
+
+hr{
+  border-color: hsl(176, 68%, 64%);
+  margin-top: 0.5rem;
+  width:9.3rem;
+}
+
+hr:hover{
+  border-color: hsl(0, 0%, 100%);
+}
+
+.arrow-icon{
+  margin-top: 0.2rem;
+  width: 15px;
+  height: 15px;
+}
+
+.arrow-icon:hover{
+  filter: brightness(0) invert(1);
 }
 
 .info-img {
   width: 300px;
-}
-
-.quote-img {
-  width: 25px;
-  margin-left: 7px;
 }
 
 .testimonials-wrapper {
@@ -71,6 +92,7 @@
 }
 
 .testimonials {
+  position: relative;
   background-color: hsl(219, 30%, 18%);
   padding: 20px;
   margin-bottom: 2rem;
@@ -78,6 +100,13 @@
   text-align: left;
   min-width: 330px;
   height: 22vh;
+}
+
+.quote-img {
+  position: absolute;
+  top: 171.1rem;
+  width: 25px;
+  margin-left: 7px;
 }
 
 .testimonials p {
@@ -103,12 +132,43 @@
   margin-left: 2px;
 }
 
-.list-container ul li:nth-of-type(2) {
+#title-list-testimonials {
   font-size: x-small;
   line-height: 2rem;
 }
 
+@media (max-width:375px){
+  .testimonials {
+    height: 30vh;
+  }
+
+  .quote-img {
+    top: 170.4rem;
+  }
+}
+
+@media (min-width:600px) and (max-width:900px){
+  .testimonials {
+    height: 32vh;
+  }
+
+  .quote-img {
+    top: 170.4rem;
+  }
+}
+
+@media (min-width:900px) and (max-width:1200px){
+  .testimonials {
+    height: 32vh;
+  }
+
+  .quote-img {
+    top: 170.4rem;
+  }
+}
+
 @media (min-width: 1200px) {
+
   .mainContainer {
     min-width: 60%;
     padding: 20px;
@@ -140,7 +200,8 @@
     grid-area: feature4;
   }
 
-  .information {
+  .information {    
+    position: relative;
     flex-direction: row;
     align-items: center;
     width: 85vw;
@@ -165,8 +226,29 @@
 
   .information h2 {
     font-size: xx-large;
+    padding-right: 4rem;
     line-height: 2.5rem;
     white-space: normal;
+  }
+
+  hr{
+    position: absolute;
+    top: 20rem;
+    left: 35.2rem;
+    margin-top: 0.7rem;
+  }
+
+  .testimonials{
+    position: relative;
+    min-height: 32vh;
+  }
+  
+  .quote-img {
+    position: absolute;
+    top: 129.9rem;
+    left: 3.8rem;
+    width: 35px;
+    margin-left: 7px;
   }
 
   .testimonials-container{
@@ -191,5 +273,22 @@
 
   .testimonials{
     height: 28vh;
+  }
+}
+
+@media (min-width: 1300px) and (max-width:1440px){
+
+  .information h2 {
+    padding-right: 13rem;
+  }
+
+  .testimonials{
+    min-height: 28vh;
+  }
+
+  .quote-img {
+    width: 37px;
+    top: 128.8rem;
+    left: 8.4rem;
   }
 }

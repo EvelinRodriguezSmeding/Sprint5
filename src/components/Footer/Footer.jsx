@@ -4,6 +4,7 @@ import Contact from "./components/Contact";
 import Nav from "./components/Nav";
 import Socials from "./components/Socials";
 import "./Footer.css";
+import EmailForm from "./components/EmailForm";
 
 function Footer() {
   return (
@@ -11,10 +12,13 @@ function Footer() {
       <footer className="footer-wrapper">
         <div className="footer-container">
           <Logo />
-          <Contact />
-          <Nav />
-          <Socials />
+          <div className="footer-box">
+            <Contact />
+            <Nav />
+            <Socials />
+          </div>
         </div>
+        <EmailForm/>
       </footer>
     </>
   );

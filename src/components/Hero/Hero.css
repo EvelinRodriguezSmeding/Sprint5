@@ -8,7 +8,9 @@
     flex-direction: column;
     text-align: center;
     background-image: url("../../../public/icons/bg-curvy-mobile.svg");
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 46%;
 }
 
 .header-intro-image{
@@ -46,4 +48,30 @@
 
 button:hover{
     background-color: hsl(176, 68%, 64%);
+}
+
+@media (min-width: 640px) and (max-width:900px){
+    .introduction{
+        background-image: none;
+    }
+}
+
+@media (min-width: 900px) {
+    .introduction{
+        background-image: none;
+    }
+}
+
+@media (min-width: 1200px) {
+    .introduction{
+        background-image: none;
+    }
+    .introduction h1 {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .introduction p{
+        padding-left: 55px;
+        padding-right: 55px;
+    }
 }

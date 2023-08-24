@@ -1,68 +1,4 @@
-/* :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(31, 29, 29, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-} */
-
-
-/* h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-} */
-
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
 
 * {
   box-sizing: border-box;
@@ -75,16 +11,235 @@ body {
   display: flex;
   min-width: 320px;
   min-height: 600vh;
-  background-color: hsl(218, 28%, 13%);
   font-size: 14px;
   color: hsl(0, 0%, 100%);
-  font-family: 'Open Sans', sans-serif;
-  /* background-color: linear-gradient(to bottom, hsl(217, 28%, 15%) 0%, hsl(218, 28%, 13%) 100px); */
+  font-family: "Open Sans", sans-serif;
+  background: linear-gradient(
+    to bottom,
+    hsl(217, 28%, 15%) 8.7%,
+    hsl(218, 28%, 13%) 7%
+  );
 }
 
+.modal-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 80%;
+  background-color: hsl(216, 53%, 9%);
+}
+
+.form-login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  margin: 0 auto;
+  position: fixed;
+  left: 50%;
+  top: 10%;
+  padding: 20px;
+  max-width: 370px;
+  font-family: "Raleway", sans-serif;
+  z-index: 5;
+  transform: translateX(-50%);
+  background-color: hsl(217, 28%, 15%);
+  border-radius: 12px;
+  overflow-y: auto; 
+  max-height: 80vh;
+}
+
+.form-login-container h2 {
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.form-login-container label {
+  text-align: left;
+  padding-left: 0.5rem;
+  margin-top: 0px; 
+}
+
+.input-login{
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.close {
+  color: #aaa;
+  position: absolute;
+  top: 5px; 
+  right: 12px;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: #000;
+}
+
+#error-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+
+@media (max-width:375px){
+  body {
+    background: linear-gradient(
+      to bottom,
+      hsl(217, 28%, 15%) 8%,
+      hsl(218, 28%, 13%) 7%
+    );
+  }
+}
+
+@media (min-width:400px) and (max-width:600px){
+  body {
+    background: linear-gradient(
+      to bottom,
+      hsl(217, 28%, 15%) 9%,
+      hsl(218, 28%, 13%) 7%
+    );
+  }
+}
+
+@media (min-width:640px) and (max-width:900px){
+  #root{
+    width: 100%;
+    background-image: url("../../../public/icons/bg-curvy-desktop.svg");
+    background-position: 50% 7%;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  body {
+    background: linear-gradient(
+      to bottom,
+      hsl(217, 28%, 15%) 10.5%,
+      hsl(218, 28%, 13%) 7%
+    );
+  }
+}
+
+@media (min-width:900px){
+  #root{
+    width: 100%;
+    background-image: url("../../../public/icons/bg-curvy-desktop.svg");
+    background-position: 50% 7%;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  body {
+    background: linear-gradient(
+      to bottom,
+      hsl(217, 28%, 15%) 11.5%,
+      hsl(218, 28%, 13%) 7%
+    );
+  }
+}
 
 @media (min-width: 1200px) {
   #root {
     width: 100%;
+    background-image: url("../../../public/icons/bg-curvy-desktop.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 16.8%;
+  }
+
+  body {
+    min-height: 20vh;
+    background: linear-gradient(
+      to bottom,
+      hsl(217, 28%, 15%) 26%,
+      hsl(218, 28%, 13%) 20%
+    );
+  }
+
+  .modal-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: hsl(216, 53%, 9%);
+  }
+  
+  .form-login-container {
+    justify-content: center;
+    justify-content: center;
+    margin: 0 auto;
+    position: fixed;
+    left: 50%;
+    top: 20%;
+    padding: 20px;
+    max-width: 50%;
+    transform: translateX(-50%);
+    max-height: 85vh;
+  }
+  
+  .form-login-container h2 {
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  .form-login-container label {
+    padding-left: 1rem;
+  }
+  
+  .form-login-container button {
+    align-self: center;
+    margin-top: 1rem;
+  }
+
+  .close {
+    color: #aaa;
+    position: absolute;
+    top: 5px; 
+    right: 12px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .close:hover {
+    color: #000;
+  }
+
+  #error-page {
+    background-color: hsl(218, 28%, 13%); 
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 1700px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 999; 
+  }
+
+  #error-page-container{
+    text-align: center;
+    margin-left: -25% ;
+  }
+}
+
+@media (min-width: 1300px) {
+  body {
+    background: linear-gradient(
+      to bottom,
+      hsl(217, 28%, 15%) 28%,
+      hsl(218, 28%, 13%) 20%
+    );
   }
 }

@@ -1,17 +1,17 @@
 import React from "react";
 
-function Testimonials({ quote, icon, name, title, className }) {
+function Testimonials(props) {
   return (
     <>
       <div className="testimonials">
-        <p>{quote}</p>
+        <p>{props.quote}</p>
         <div className="testimonial-list-container">
-          <div className={className}> {icon}</div>
+          <div className={props.className}> {props.icon}</div>
           <ul className="list-style">
             <li>
-              <b>{name}</b>
+              <b>{props.name}</b>
             </li>
-            <li>{title}</li>
+            <li id="title-list-testimonials">{props.title}</li>
           </ul>
         </div>
       </div>

@@ -7,21 +7,21 @@ function Contact() {
   return (
     <>
       <div className="contact-wrapper">
-        <div className="contact-item">
+        <div className="contact-item location">
           <img src={Location} alt="icon-location" />
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.{" "}
+            eiusmod tempor incididunt ut labore et dolore magna aliqua{" "}
           </p>
         </div>
 
-        <div className="contact-item">
+        <div className="contact-item phone">
           {" "}
           <img src={Phone} alt="icon-phone" />
           <p>+1-543-123-4567</p>
         </div>
         
-        <div className="contact-item">
+        <div className="contact-item email">
           {" "}
           <img src={Email} alt="" />
           <p>example@fylo.com</p>
