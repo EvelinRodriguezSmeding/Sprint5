@@ -70,7 +70,8 @@ function Login() {
           />
           {errorPassword && (
             <p style={{ color: "red" }}>
-              La contraseña debe tener 8 caracteres mínimo
+              La contraseña debe tener 8 caracteres mínimo, un número,
+              una mayúscula, <br></br>  una minúscula, y un símbolo
             </p>
           )}
           <button type="submit">Sign in</button>
