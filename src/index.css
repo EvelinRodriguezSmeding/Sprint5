@@ -10,7 +10,7 @@ body {
   margin: 0;
   display: flex;
   min-width: 320px;
-  min-height: 600vh;
+  min-height: 100vh; 
   font-size: 14px;
   color: hsl(0, 0%, 100%);
   font-family: "Open Sans", sans-serif;
@@ -98,7 +98,7 @@ body {
     background: linear-gradient(
       to bottom,
       hsl(217, 28%, 15%) 8%,
-      hsl(218, 28%, 13%) 7%
+      hsl(218, 28%, 13%) 9%
     );
   }
 }

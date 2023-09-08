@@ -162,6 +162,9 @@ button:hover {
     left: 50%;
     height: 55vh;
   }
+  .footer-wrapper {
+    height: 1077px;
+  }
 }
 
 @media (min-width: 1200px) {
